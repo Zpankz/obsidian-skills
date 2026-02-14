@@ -1,7 +1,7 @@
 {
-  "name": "obsidian",
-  "version": "1.0.0",
-  "description": "Create and edit Obsidian vault files including Markdown, Bases, and Canvas. Use when working with .md, .base, or .canvas files in an Obsidian vault.",
+  "name": "obsidian-skills",
+  "version": "0.1.0",
+  "description": "A skills marketplace for Obsidian workflows. Install plugins via .claude-plugin/marketplace.json (obsidian-skills-core + optional obsidian-skills-extras).",
   "author": {
     "name": "Steph Ango",
     "url": "https://stephango.com/"
@@ -10,6 +10,8 @@
   "license": "MIT",
   "keywords": [
     "obsidian",
+    "claude-code",
+    "agent-skills",
     "markdown",
     "bases",
     "canvas",
