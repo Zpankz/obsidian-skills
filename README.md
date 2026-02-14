@@ -25,6 +25,21 @@ These skills follow the [Agent Skills specification](https://agentskills.io/spec
 
 ## Installation
 
+### Claude Code Plugin Marketplace
+
+Add this repo to your Claude Code marketplace, then install one (or both) plugins:
+
+```
+/plugin marketplace add <owner>/obsidian-skills
+/plugin install obsidian-skills-core
+/plugin install obsidian-skills-extras
+```
+
+- `obsidian-skills-core` is the Obsidian-focused pack.
+- `obsidian-skills-extras` is an optional expansion pack.
+
+### Manual installation
+
 Copy the `skills` folder to your vault's `.claude` directory:
 
 ```

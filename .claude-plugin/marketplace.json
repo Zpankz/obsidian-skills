@@ -1,15 +1,62 @@
 {
-  "name": "obsidian-skills",
+  "name": "obsidian-skills-marketplace",
   "owner": {
     "name": "Steph Ango",
-    "url": "https://stephango.com/"
+    "email": ""
+  },
+  "metadata": {
+    "description": "A marketplace of agent skills for Obsidian workflows, plus optional non-Obsidian extras.",
+    "version": "0.1.0"
   },
   "plugins": [
     {
-      "name": "obsidian",
+      "name": "obsidian-skills-core",
+      "description": "Core Obsidian skills (Markdown/Canvas/Bases/CLI), plugin skills (Dataview/Templater/Tasks/etc.), and Obsidian development skills.",
       "source": "./",
-      "description": "Claude Skills for Obsidian",
-      "version": "1.0.0"
+      "strict": false,
+      "skills": [
+        "./skills/datacore",
+        "./skills/dataview",
+        "./skills/defuddle",
+        "./skills/excalidraw-diagram",
+        "./skills/json-canvas",
+        "./skills/obsidian-bases",
+        "./skills/obsidian-canvas",
+        "./skills/obsidian-cli",
+        "./skills/obsidian-dev",
+        "./skills/obsidian-links",
+        "./skills/obsidian-markdown",
+        "./skills/obsidian-markdown-structure",
+        "./skills/obsidian-mermaid",
+        "./skills/obsidian-ops",
+        "./skills/obsidian-plugin-dev",
+        "./skills/obsidian-ref",
+        "./skills/obsidian-theme-dev",
+        "./skills/obsidian-vault-manager",
+        "./skills/obsidian-yaml-frontmatter",
+        "./skills/tasks",
+        "./skills/templater"
+      ]
+    },
+    {
+      "name": "obsidian-skills-extras",
+      "description": "Optional expansion pack (non-Obsidian skills). Install obsidian-skills-core first.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ai4pkm-helper",
+        "./skills/docx-to-markdown",
+        "./skills/epub-to-markdown",
+        "./skills/gemini-image-skill",
+        "./skills/gobi-onboarding",
+        "./skills/interactive-writing-assistant",
+        "./skills/markdown-slides",
+        "./skills/markdown-video",
+        "./skills/video-add-chapters",
+        "./skills/video-cleaning",
+        "./skills/video-full-process",
+        "./skills/youtube-transcript-summarizer"
+      ]
     }
   ]
 }
