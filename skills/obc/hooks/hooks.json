@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "The OBC (Obsidian Commands) skill is available with 30 vault commands. Based on time of day and session context, consider suggesting a relevant command:\n\n- Morning (before noon): /context to load vault state, then /today for daily planning\n- Evening (after 5pm): /close-day to process the day's notes\n- Monday morning: /7plan for weekly planning, /drift to check alignment\n- When starting deep work: /context first, then the relevant command\n\nDo NOT automatically run any command. Only mention the suggestion briefly if the user hasn't specified a task."
+          }
+        ]
+      }
+    ]
+  }
+}
