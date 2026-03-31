@@ -38,6 +38,12 @@ Add this repo to your Claude Code marketplace, then install one (or both) plugin
 - `obsidian-skills-core` is the Obsidian-focused pack.
 - `obsidian-skills-extras` is an optional expansion pack.
 
+### npx skills
+
+```
+npx skills add git@github.com:kepano/obsidian-skills.git
+```
+
 ### Manual installation
 
 Copy the `skills` folder to your vault's `.claude` directory:
@@ -66,6 +72,18 @@ Add the contents of this repo to a `/.claude` folder in the root of your Obsidia
 #### Codex CLI
 
 Copy the `skills/` directory into your Codex skills path (typically `~/.codex/skills`). See the [Agent Skills specification](https://agentskills.io/specification) for the standard skill format.
+
+#### OpenCode
+
+Clone the entire repo into the OpenCode skills directory (`~/.opencode/skills/`):
+
+```sh
+git clone https://github.com/kepano/obsidian-skills.git ~/.opencode/skills/obsidian-skills
+```
+
+Do not copy only the inner `skills/` folder — clone the full repo so the directory structure is `~/.opencode/skills/obsidian-skills/skills/<skill-name>/SKILL.md`.
+
+OpenCode auto-discovers all `SKILL.md` files under `~/.opencode/skills/`. No changes to `opencode.json` or any config file are needed. Skills become available after restarting OpenCode.
 
 ## Skill Coverage
 

@@ -1,6 +1,6 @@
 {
   "name": "obsidian-skills",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "A skills marketplace for Obsidian workflows. Install plugins via .claude-plugin/marketplace.json (obsidian-skills-core + optional obsidian-skills-extras).",
   "author": {
     "name": "Steph Ango",
