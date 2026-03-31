@@ -25,6 +25,7 @@
         "./skills/obsidian-canvas",
         "./skills/obsidian-cli",
         "./skills/obsidian-dev",
+        "./skills/obsidian-devtools",
         "./skills/obsidian-links",
         "./skills/obsidian-markdown",
         "./skills/obsidian-markdown-structure",
