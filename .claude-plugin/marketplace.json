@@ -20,6 +20,7 @@
         "./skills/defuddle",
         "./skills/excalidraw-diagram",
         "./skills/json-canvas",
+        "./skills/obc",
         "./skills/obsidian-bases",
         "./skills/obsidian-canvas",
         "./skills/obsidian-cli",
