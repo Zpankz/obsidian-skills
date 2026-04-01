@@ -4,7 +4,7 @@ These skills follow the [Agent Skills specification](https://agentskills.io/spec
 
 ## Available Skills
 
-This repo currently contains **97 skills**, audited into granular marketplace bundles so users can install just the parts they need.
+This repo currently contains **98 skills**, audited into granular marketplace bundles so users can install just the parts they need.
 
 ### Marketplace bundles
 
@@ -14,7 +14,7 @@ This repo currently contains **97 skills**, audited into granular marketplace bu
 | `obsidian-skills-plugins` | Plugin-specific syntax and workflows | `advanced-canvas`, `claudian`, `datacore`, `dataview`, `internetvin-terminal`, `obsidian42-brat`, `tasks`, `templater`, `viva-examiner`, `viva-llm` |
 | `obsidian-skills-automation` | Automation, sync, and headless vault ops | `ob` (`obsidian-headless`), `obsidian-cron`, `obsidian-vault-manager` |
 | `obsidian-skills-workflows` | Higher-level AI-assisted PKM workflows | `ai4pkm-helper`, `gobi-onboarding`, `interactive-writing-assistant`, `obc`, `obsidian-dream`, `obsidian-learning-path` |
-| `obsidian-skills-dev` | Obsidian development, debugging, project ops, theme work, code intelligence, skill discovery, and Gemini API development guidance | `code-intelligence`, `find-skills`, `gemini-api-dev`, `gemini-interactions-api`, `gemini-live-api-dev`, `obsidian-dev`, `obsidian-devtools`, `obsidian-ops`, `obsidian-theme-dev`, `skill-creator` |
+| `obsidian-skills-dev` | Obsidian development, debugging, project ops, theme work, code intelligence, MCP Apps/elicitation architecture, skill discovery, and Gemini API development guidance | `code-intelligence`, `find-skills`, `gemini-api-dev`, `gemini-interactions-api`, `gemini-live-api-dev`, `obsidian-dev`, `obsidian-devtools`, `obsidian-mcp-apps`, `obsidian-ops`, `obsidian-theme-dev`, `skill-creator` |
 | `obsidian-skills-plugin-devkit` | Imported Obsidian plugin development toolkit | `obsidian-plugin-dev` plus 9 specialized `obsidian-plugin-*` skills |
 | `obsidian-skills-plugin-ui` | React-focused plugin UI toolkit | `obsidian-plugin-shadcn-ui`, `obsidian-plugin-shadcn-styling`, `obsidian-plugin-shadcn-composition`, `obsidian-plugin-react-best-practices`, `obsidian-plugin-react-performance`, `obsidian-plugin-react-components` |
 | `obsidian-skills-visual` | Canvas, diagramming, and presentation workflows | `excalidraw-diagram`, `json-canvas`, `markdown-slides`, `obsidian-canvas`, `obsidian-mermaid` |
@@ -23,7 +23,7 @@ This repo currently contains **97 skills**, audited into granular marketplace bu
 | `obsidian-skills-smart-connections` | Smart Connections plugin development toolkit | `smart-connections` plus 4 specialized `smart-connections-*` skills |
 | `obsidian-skills-breadcrumbs` | Breadcrumbs plugin documentation toolkit | `breadcrumbs` plus 6 specialized `breadcrumbs-*` skills |
 | `obsidian-skills-notemdpro` | Imported NoteMD Pro family with umbrella routing plus independent subskills | `notemdpro` plus 13 independent `notemdpro-*` subskills |
-| `obsidian-skills-all` | Convenience bundle with every skill in the repo | all 97 skills |
+| `obsidian-skills-all` | Convenience bundle with every skill in the repo | all 98 skills |
 
 ### Cross-bundle integration opportunities
 
@@ -33,6 +33,7 @@ Some of the strongest workflows in this repo come from combining bundles rather 
 - **Extended Graph + dev**: use `obsidian-skills-extended-graph` with `obsidian-skills-dev` when adding plugin features that also touch Obsidian API patterns, release hygiene, or debugging.
 - **Smart Connections + dev/workflows**: use `obsidian-skills-smart-connections` with `obsidian-skills-dev` or `obsidian-skills-workflows` when collection pipelines feed user-facing workflows and plugin UX.
 - **Gemini API + plugins/media**: use `obsidian-skills-dev` together with `obsidian-skills-plugins` or `obsidian-skills-media` when building Gemini-powered Obsidian plugins, Live voice flows, or image-generation/document workflows.
+- **MCP Apps + visual/plugin devkit**: use `obsidian-skills-dev` with `obsidian-skills-visual` and `obsidian-skills-plugin-devkit` when embedding localhost-backed apps like Excalidraw in Obsidian, designing custom views, or mapping MCP elicitation to safe native vault workflows.
 - **Plugin devkit + dev/plugins**: use `obsidian-skills-plugin-devkit` with `obsidian-skills-dev` and `obsidian-skills-plugins` when a task spans plugin scaffolding, lifecycle safety, accessibility, release checks, and plugin-specific UX rules.
 - **Plugin UI + devkit**: use `obsidian-skills-plugin-ui` with `obsidian-skills-plugin-devkit` when an Obsidian plugin uses React and you want both implementation safety and higher-quality UI composition, theming, or performance.
 - **NoteMD Pro + notes/visual/media**: use `obsidian-skills-notemdpro` with `obsidian-skills-notes`, `obsidian-skills-visual`, or `obsidian-skills-media` for markdown generation pipelines that also need link validation, Mermaid output, diagrams, or imported source material.
@@ -97,6 +98,7 @@ Some of the strongest workflows in this repo come from combining bundles rather 
 | [gemini-live-api-dev](skills/gemini-live-api-dev) | Builds realtime Gemini Live voice/video/text experiences with WebSockets, VAD, native audio, and session management |
 | [obsidian-dev](skills/obsidian-dev) | Implements and debugs Obsidian plugins and themes with repo-aware code patterns |
 | [obsidian-devtools](skills/obsidian-devtools) | Inspects and automates a running Obsidian instance via Chrome DevTools Protocol |
+| [obsidian-mcp-apps](skills/obsidian-mcp-apps) | Builds Obsidian plugins that host MCP Apps, embed localhost-backed UIs like Excalidraw, and map elicitation to native approvals and forms |
 | [obsidian-ops](skills/obsidian-ops) | Handles builds, linting, troubleshooting, packaging, release prep, and operational maintenance |
 | [obsidian-theme-dev](skills/obsidian-theme-dev) | Develops Obsidian themes with CSS/SCSS patterns, variables, and selector guidance |
 | [skill-creator](skills/skill-creator) | Creates, refines, benchmarks, and evaluates agent skills themselves |

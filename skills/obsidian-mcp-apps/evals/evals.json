@@ -1,0 +1,23 @@
+{
+  "skill_name": "obsidian-mcp-apps",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to embed pi-excalidraw inside an Obsidian pane so I do not need a separate browser tab. What architecture should I use?",
+      "expected_output": "Recommends an Obsidian custom view wrapper around the existing localhost runtime, explains why iframe-first is the best first step, and separates view, runtime, and vault concerns.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How should an Obsidian plugin handle MCP elicitation for note creation, file rename approval, and OAuth login?",
+      "expected_output": "Distinguishes form-mode and URL-mode elicitation, maps form-mode to native modals, maps URL-mode to external browser plus waiting state, and adds trust-tiered approval guidance for vault writes.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Sketch the folder structure and first implementation slice for an Obsidian plugin that hosts MCP Apps and a localhost-backed Excalidraw UI.",
+      "expected_output": "Provides a concrete plugin scaffold with main.ts, views, services, settings, and safe phased implementation guidance rather than an overbuilt all-at-once design.",
+      "files": []
+    }
+  ]
+}

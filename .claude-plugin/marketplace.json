@@ -5,8 +5,8 @@
     "email": ""
   },
   "metadata": {
-    "description": "A marketplace of agent skills for Obsidian workflows, organized into granular bundles for notes, plugins, automation, workflows, development, a dedicated plugin devkit, React-focused plugin UI work, visuals, media, Extended Graph development, Smart Connections development, Breadcrumbs docs, and the imported NoteMD Pro family.",
-    "version": "0.7.5"
+    "description": "A marketplace of agent skills for Obsidian workflows, organized into granular bundles for notes, plugins, automation, workflows, development, MCP Apps and elicitation architecture, a dedicated plugin devkit, React-focused plugin UI work, visuals, media, Extended Graph development, Smart Connections development, Breadcrumbs docs, and the imported NoteMD Pro family.",
+    "version": "0.7.6"
   },
   "plugins": [
     {
@@ -70,7 +70,7 @@
     },
     {
       "name": "obsidian-skills-dev",
-      "description": "Obsidian development, debugging, project ops, theme work, code intelligence, skill discovery/authoring, and Gemini API development guidance.",
+      "description": "Obsidian development, debugging, project ops, theme work, code intelligence, MCP Apps and elicitation architecture, skill discovery/authoring, and Gemini API development guidance.",
       "source": "./",
       "strict": false,
       "skills": [
@@ -81,6 +81,7 @@
         "./skills/gemini-live-api-dev",
         "./skills/obsidian-dev",
         "./skills/obsidian-devtools",
+        "./skills/obsidian-mcp-apps",
         "./skills/obsidian-ops",
         "./skills/obsidian-theme-dev",
         "./skills/skill-creator"
@@ -272,6 +273,7 @@
         "./skills/obsidian-dev",
         "./skills/obsidian-devtools",
         "./skills/obsidian-dream",
+        "./skills/obsidian-mcp-apps",
         "./skills/obsidian-learning-path",
         "./skills/obsidian-links",
         "./skills/obsidian-markdown",
