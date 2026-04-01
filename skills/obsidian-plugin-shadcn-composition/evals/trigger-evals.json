@@ -1,0 +1,34 @@
+[
+  {
+    "query": "What shadcn components should I use for this plugin settings page with tabs, cards, and validation?",
+    "should_trigger": true
+  },
+  {
+    "query": "Turn this custom markup into proper shadcn forms, dialogs, alerts, and empty states.",
+    "should_trigger": true
+  },
+  {
+    "query": "I need help structuring a shadcn onboarding modal and choosing the right overlay primitives.",
+    "should_trigger": true
+  },
+  {
+    "query": "Can you refactor this shadcn form so it uses the right Field and Group composition patterns?",
+    "should_trigger": true
+  },
+  {
+    "query": "The shadcn components are fine structurally; I only want nicer token usage and visual polish.",
+    "should_trigger": false
+  },
+  {
+    "query": "This plugin does not use shadcn. I need regular CSS scoping in styles.css.",
+    "should_trigger": false
+  },
+  {
+    "query": "The interface is laggy when typing and filtering. I need React performance advice.",
+    "should_trigger": false
+  },
+  {
+    "query": "I keep adding boolean props to this React component API. How should I redesign it?",
+    "should_trigger": false
+  }
+]

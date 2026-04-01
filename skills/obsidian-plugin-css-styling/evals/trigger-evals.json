@@ -1,0 +1,34 @@
+[
+  {
+    "query": "The settings tab CSS is leaking into the rest of Obsidian. Can you scope selectors and clean up styles.css?",
+    "should_trigger": true
+  },
+  {
+    "query": "Help me style this custom ItemView with Obsidian CSS variables so it works in light and dark themes.",
+    "should_trigger": true
+  },
+  {
+    "query": "My plugin modal uses hard-coded colors and inline styles. Please convert it to proper styles.css patterns.",
+    "should_trigger": true
+  },
+  {
+    "query": "Can you polish spacing, borders, and focus styles for this plugin settings pane without changing the copy?",
+    "should_trigger": true
+  },
+  {
+    "query": "Which shadcn variants and semantic Tailwind tokens should I use to make this React panel prettier?",
+    "should_trigger": false
+  },
+  {
+    "query": "These button labels feel awkward. Rename the commands and rewrite the notices in sentence case.",
+    "should_trigger": false
+  },
+  {
+    "query": "Should this React widget become a compound component with context instead of more boolean props?",
+    "should_trigger": false
+  },
+  {
+    "query": "This shadcn dialog already looks okay, but the React view is laggy when filtering results.",
+    "should_trigger": false
+  }
+]

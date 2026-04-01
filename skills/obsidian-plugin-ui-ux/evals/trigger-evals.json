@@ -1,0 +1,34 @@
+[
+  {
+    "query": "Please rename these commands and settings headings so they feel native in Obsidian.",
+    "should_trigger": true
+  },
+  {
+    "query": "The notices, placeholders, and button labels in this plugin sound clunky. Can you rewrite them?",
+    "should_trigger": true
+  },
+  {
+    "query": "I need help enforcing sentence case across my plugin UI strings and locale files.",
+    "should_trigger": true
+  },
+  {
+    "query": "Can you clean up the wording in this settings tab without changing the underlying CSS?",
+    "should_trigger": true
+  },
+  {
+    "query": "The modal layout is cramped and the CSS variables are wrong. Help me restyle it.",
+    "should_trigger": false
+  },
+  {
+    "query": "Which shadcn component should I use for this onboarding form and empty state?",
+    "should_trigger": false
+  },
+  {
+    "query": "This React panel rerenders too much when typing. What performance fixes should I apply?",
+    "should_trigger": false
+  },
+  {
+    "query": "Can we refactor this component API so I stop passing six boolean props into one modal?",
+    "should_trigger": false
+  }
+]

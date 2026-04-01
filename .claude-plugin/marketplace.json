@@ -5,58 +5,313 @@
     "email": ""
   },
   "metadata": {
-    "description": "A marketplace of agent skills for Obsidian workflows, plus optional non-Obsidian extras.",
-    "version": "0.1.0"
+    "description": "A marketplace of agent skills for Obsidian workflows, organized into granular bundles for notes, plugins, automation, workflows, development, a dedicated plugin devkit, React-focused plugin UI work, visuals, media, Extended Graph development, Smart Connections development, Breadcrumbs docs, and the imported NoteMD Pro family.",
+    "version": "0.7.5"
   },
   "plugins": [
     {
-      "name": "obsidian-skills-core",
-      "description": "Core Obsidian skills (Markdown/Canvas/Bases/CLI), plugin skills (Dataview/Templater/Tasks/etc.), and Obsidian development skills.",
+      "name": "obsidian-skills-notes",
+      "description": "Core note authoring, structure, references, and vault interaction: Markdown, links, YAML frontmatter, Bases, CLI, references, and clean web-to-markdown extraction.",
       "source": "./",
       "strict": false,
       "skills": [
+        "./skills/defuddle",
+        "./skills/obsidian-bases",
+        "./skills/obsidian-cli",
+        "./skills/obsidian-links",
+        "./skills/obsidian-markdown",
+        "./skills/obsidian-markdown-structure",
+        "./skills/obsidian-ref",
+        "./skills/obsidian-yaml-frontmatter"
+      ]
+    },
+    {
+      "name": "obsidian-skills-plugins",
+      "description": "Plugin-specific syntax and workflows for Dataview, Datacore, Templater, Tasks, Advanced Canvas, BRAT, Claudian, internetVin Terminal, VIVA LLM, and Viva Examiner.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/advanced-canvas",
+        "./skills/claudian",
+        "./skills/datacore",
+        "./skills/dataview",
+        "./skills/internetvin-terminal",
+        "./skills/obsidian42-brat",
+        "./skills/tasks",
+        "./skills/templater",
+        "./skills/viva-examiner",
+        "./skills/viva-llm"
+      ]
+    },
+    {
+      "name": "obsidian-skills-automation",
+      "description": "Automation, sync, and headless operations: obsidian-headless (`ob`), scheduled jobs, and local vault management.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ob",
+        "./skills/obsidian-cron",
+        "./skills/obsidian-vault-manager"
+      ]
+    },
+    {
+      "name": "obsidian-skills-workflows",
+      "description": "Higher-level vault workflows, AI-assisted PKM systems, onboarding flows, long-running memory consolidation, and adaptive learning-path generation.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ai4pkm-helper",
+        "./skills/gobi-onboarding",
+        "./skills/interactive-writing-assistant",
+        "./skills/obc",
+        "./skills/obsidian-dream",
+        "./skills/obsidian-learning-path"
+      ]
+    },
+    {
+      "name": "obsidian-skills-dev",
+      "description": "Obsidian development, debugging, project ops, theme work, code intelligence, skill discovery/authoring, and Gemini API development guidance.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/code-intelligence",
+        "./skills/find-skills",
+        "./skills/gemini-api-dev",
+        "./skills/gemini-interactions-api",
+        "./skills/gemini-live-api-dev",
+        "./skills/obsidian-dev",
+        "./skills/obsidian-devtools",
+        "./skills/obsidian-ops",
+        "./skills/obsidian-theme-dev",
+        "./skills/skill-creator"
+      ]
+    },
+    {
+      "name": "obsidian-skills-plugin-devkit",
+      "description": "Imported Obsidian plugin development toolkit: umbrella guidance plus focused skills for scaffolding, lifecycle safety, type safety, UI/UX, file operations, styling, accessibility, code quality, and submission readiness.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/obsidian-plugin-accessibility",
+        "./skills/obsidian-plugin-boilerplate",
+        "./skills/obsidian-plugin-code-quality",
+        "./skills/obsidian-plugin-css-styling",
+        "./skills/obsidian-plugin-dev",
+        "./skills/obsidian-plugin-file-operations",
+        "./skills/obsidian-plugin-memory-management",
+        "./skills/obsidian-plugin-submission",
+        "./skills/obsidian-plugin-type-safety",
+        "./skills/obsidian-plugin-ui-ux"
+      ]
+    },
+    {
+      "name": "obsidian-skills-plugin-ui",
+      "description": "React-focused Obsidian plugin UI toolkit for shadcn/ui integration, React component architecture, component composition, visual styling, and React performance guidance.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/obsidian-plugin-react-best-practices",
+        "./skills/obsidian-plugin-react-components",
+        "./skills/obsidian-plugin-react-performance",
+        "./skills/obsidian-plugin-shadcn-composition",
+        "./skills/obsidian-plugin-shadcn-styling",
+        "./skills/obsidian-plugin-shadcn-ui"
+      ]
+    },
+    {
+      "name": "obsidian-skills-visual",
+      "description": "Visual knowledge mapping and presentation skills: Canvas, JSON Canvas, Excalidraw, Mermaid, and markdown slide decks.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/excalidraw-diagram",
+        "./skills/json-canvas",
+        "./skills/markdown-slides",
+        "./skills/obsidian-canvas",
+        "./skills/obsidian-mermaid"
+      ]
+    },
+    {
+      "name": "obsidian-skills-media",
+      "description": "Media, import/export, image generation, transcripts, and video production pipelines for Obsidian-adjacent workflows.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/docx-to-markdown",
+        "./skills/epub-to-markdown",
+        "./skills/gemini-image-skill",
+        "./skills/markdown-video",
+        "./skills/video-add-chapters",
+        "./skills/video-cleaning",
+        "./skills/video-full-process",
+        "./skills/youtube-transcript-summarizer"
+      ]
+    },
+    {
+      "name": "obsidian-skills-extended-graph",
+      "description": "Obsidian Extended Graph plugin development toolkit for new features, stat calculators, settings sections, and interactive filter types.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/extended-graph",
+        "./skills/extended-graph-interactive-type",
+        "./skills/extended-graph-plugin-feature",
+        "./skills/extended-graph-setting-section",
+        "./skills/extended-graph-stat-calculator"
+      ]
+    },
+    {
+      "name": "obsidian-skills-smart-connections",
+      "description": "Obsidian Smart Connections plugin development toolkit for component patterns, view and command wiring, collection pipelines, and Ava regression or migration tests.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/smart-connections",
+        "./skills/smart-connections-ava-and-migration-harness",
+        "./skills/smart-connections-collection-pipeline",
+        "./skills/smart-connections-component-patterns",
+        "./skills/smart-connections-view-command-flow"
+      ]
+    },
+    {
+      "name": "obsidian-skills-breadcrumbs",
+      "description": "Breadcrumbs plugin documentation toolkit: navigation, editing, terminology control, vault conventions, workflow guidance, and docs validation.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/breadcrumbs",
+        "./skills/breadcrumbs-code-conventions",
+        "./skills/breadcrumbs-development-workflow",
+        "./skills/breadcrumbs-edit",
+        "./skills/breadcrumbs-nav",
+        "./skills/breadcrumbs-terminology",
+        "./skills/breadcrumbs-testing-guide"
+      ]
+    },
+    {
+      "name": "obsidian-skills-notemdpro",
+      "description": "Imported NoteMD Pro family: umbrella routing skill plus independent subskills for content generation, linking, research, translation, Mermaid/formula healing, batch processing, and architecture/testing workflows.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/notemdpro",
+        "./skills/notemdpro-batch-processor",
+        "./skills/notemdpro-concept-extractor",
+        "./skills/notemdpro-content-generator",
+        "./skills/notemdpro-formula-healer",
+        "./skills/notemdpro-link-analyzer",
+        "./skills/notemdpro-mermaid-healer",
+        "./skills/notemdpro-mermaid-summarizer",
+        "./skills/notemdpro-qa-extractor",
+        "./skills/notemdpro-selection-processor",
+        "./skills/notemdpro-system-architecture",
+        "./skills/notemdpro-test-driven-development",
+        "./skills/notemdpro-text-translator",
+        "./skills/notemdpro-web-researcher"
+      ]
+    },
+    {
+      "name": "obsidian-skills-all",
+      "description": "Convenience bundle with every skill in this repository.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/advanced-canvas",
+        "./skills/ai4pkm-helper",
+        "./skills/breadcrumbs",
+        "./skills/breadcrumbs-code-conventions",
+        "./skills/breadcrumbs-development-workflow",
+        "./skills/breadcrumbs-edit",
+        "./skills/breadcrumbs-nav",
+        "./skills/breadcrumbs-terminology",
+        "./skills/breadcrumbs-testing-guide",
+        "./skills/claudian",
+        "./skills/code-intelligence",
         "./skills/datacore",
         "./skills/dataview",
         "./skills/defuddle",
+        "./skills/docx-to-markdown",
+        "./skills/epub-to-markdown",
         "./skills/excalidraw-diagram",
+        "./skills/extended-graph",
+        "./skills/extended-graph-interactive-type",
+        "./skills/extended-graph-plugin-feature",
+        "./skills/extended-graph-setting-section",
+        "./skills/extended-graph-stat-calculator",
+        "./skills/find-skills",
+        "./skills/gemini-api-dev",
+        "./skills/gemini-image-skill",
+        "./skills/gemini-interactions-api",
+        "./skills/gemini-live-api-dev",
+        "./skills/gobi-onboarding",
+        "./skills/interactive-writing-assistant",
+        "./skills/internetvin-terminal",
         "./skills/json-canvas",
+        "./skills/markdown-slides",
+        "./skills/markdown-video",
+        "./skills/notemdpro",
+        "./skills/notemdpro-batch-processor",
+        "./skills/notemdpro-concept-extractor",
+        "./skills/notemdpro-content-generator",
+        "./skills/notemdpro-formula-healer",
+        "./skills/notemdpro-link-analyzer",
+        "./skills/notemdpro-mermaid-healer",
+        "./skills/notemdpro-mermaid-summarizer",
+        "./skills/notemdpro-qa-extractor",
+        "./skills/notemdpro-selection-processor",
+        "./skills/notemdpro-system-architecture",
+        "./skills/notemdpro-test-driven-development",
+        "./skills/notemdpro-text-translator",
+        "./skills/notemdpro-web-researcher",
+        "./skills/ob",
         "./skills/obc",
         "./skills/obsidian-bases",
         "./skills/obsidian-canvas",
         "./skills/obsidian-cli",
+        "./skills/obsidian-cron",
         "./skills/obsidian-dev",
         "./skills/obsidian-devtools",
+        "./skills/obsidian-dream",
+        "./skills/obsidian-learning-path",
         "./skills/obsidian-links",
         "./skills/obsidian-markdown",
         "./skills/obsidian-markdown-structure",
         "./skills/obsidian-mermaid",
         "./skills/obsidian-ops",
+        "./skills/obsidian-plugin-accessibility",
+        "./skills/obsidian-plugin-boilerplate",
+        "./skills/obsidian-plugin-code-quality",
+        "./skills/obsidian-plugin-css-styling",
         "./skills/obsidian-plugin-dev",
+        "./skills/obsidian-plugin-file-operations",
+        "./skills/obsidian-plugin-memory-management",
+        "./skills/obsidian-plugin-react-best-practices",
+        "./skills/obsidian-plugin-react-components",
+        "./skills/obsidian-plugin-react-performance",
+        "./skills/obsidian-plugin-shadcn-composition",
+        "./skills/obsidian-plugin-shadcn-styling",
+        "./skills/obsidian-plugin-shadcn-ui",
+        "./skills/obsidian-plugin-submission",
+        "./skills/obsidian-plugin-type-safety",
+        "./skills/obsidian-plugin-ui-ux",
         "./skills/obsidian-ref",
         "./skills/obsidian-theme-dev",
         "./skills/obsidian-vault-manager",
         "./skills/obsidian-yaml-frontmatter",
+        "./skills/obsidian42-brat",
+        "./skills/skill-creator",
+        "./skills/smart-connections",
+        "./skills/smart-connections-ava-and-migration-harness",
+        "./skills/smart-connections-collection-pipeline",
+        "./skills/smart-connections-component-patterns",
+        "./skills/smart-connections-view-command-flow",
         "./skills/tasks",
-        "./skills/templater"
-      ]
-    },
-    {
-      "name": "obsidian-skills-extras",
-      "description": "Optional expansion pack (non-Obsidian skills). Install obsidian-skills-core first.",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/ai4pkm-helper",
-        "./skills/docx-to-markdown",
-        "./skills/epub-to-markdown",
-        "./skills/gemini-image-skill",
-        "./skills/gobi-onboarding",
-        "./skills/interactive-writing-assistant",
-        "./skills/markdown-slides",
-        "./skills/markdown-video",
+        "./skills/templater",
         "./skills/video-add-chapters",
         "./skills/video-cleaning",
         "./skills/video-full-process",
+        "./skills/viva-examiner",
+        "./skills/viva-llm",
         "./skills/youtube-transcript-summarizer"
       ]
     }

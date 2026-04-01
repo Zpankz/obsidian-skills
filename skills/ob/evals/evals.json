@@ -1,0 +1,83 @@
+{
+  "skill_name": "obsidian-headless",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just installed obsidian-headless on my Ubuntu server and I want to set up my vault called 'Research Notes' to sync continuously. I've never used ob before. Walk me through the whole setup from login to running continuous sync.",
+      "expected_output": "Complete step-by-step walkthrough: ob login, ob sync-list-remote to identify the vault, ob sync-setup --vault 'Research Notes', then ob sync --continuous. Each step explained. Mention that Node.js ≥22 is required.",
+      "files": [],
+      "expectations": [
+        "Includes ob login as the first step",
+        "Includes ob sync-list-remote to find the vault",
+        "Includes ob sync-setup --vault 'Research Notes'",
+        "Includes ob sync --continuous for daemon mode",
+        "Explains what each step does (not just raw commands)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "My ob sync --continuous keeps overwriting my notes with old or empty versions. The Obsidian Sync version history shows files bouncing between correct content and 0 bytes in a repeating pattern. What's going wrong and how do I fix it?",
+      "expected_output": "Correctly diagnose as the bidirectional oscillation bug (issue #15 in v0.0.9). Recommend switching to pull-only mode as the primary workaround: ob sync-config --mode pull-only. Explain what pull-only does. Mention that it is an open bug not yet fixed.",
+      "files": [],
+      "expectations": [
+        "Identifies the root cause as the bidirectional sync oscillation bug",
+        "References issue #15 or v0.0.9 known issue",
+        "Provides the ob sync-config --mode pull-only fix",
+        "Explains what pull-only mode does (only downloads, does not push)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want a GitHub Actions workflow that pulls my Obsidian vault every 6 hours and commits any new files to my repo. The vault uses standard (not e2ee) encryption. Give me the complete workflow YAML.",
+      "expected_output": "Complete, valid GitHub Actions YAML with: schedule cron every 6 hours, setup-node@v4 with node 22, npm install -g obsidian-headless, ob login using ${{ secrets.OB_EMAIL }} and ${{ secrets.OB_PASSWORD }}, conditional ob sync-setup, ob sync with pull-only or equivalent, git commit and push steps.",
+      "files": [],
+      "expectations": [
+        "Uses setup-node with node-version 22",
+        "Installs obsidian-headless globally",
+        "Uses GitHub secrets for credentials (OB_EMAIL, OB_PASSWORD)",
+        "Includes ob sync-setup step (idempotent)",
+        "Uses pull-only mode or equivalent to avoid pushing from CI",
+        "Includes git commit and push for synced files",
+        "Cron schedule is every 6 hours: '0 */6 * * *'"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I want to publish my vault to my Obsidian Publish site 'my-garden'. Only files with 'publish: true' in their frontmatter should go live. I want to see a preview of what would be published before actually publishing. Walk me through the commands.",
+      "expected_output": "ob publish-setup --site my-garden, then ob publish --dry-run (preview). Explain that publish: true frontmatter is highest-priority selector, overriding folder rules. Then ob publish --yes to actually publish. Optionally mention ob publish-config.",
+      "files": [],
+      "expectations": [
+        "Includes ob publish-setup --site my-garden",
+        "Includes ob publish --dry-run for preview",
+        "Explains that publish: true frontmatter controls file selection",
+        "Includes ob publish --yes (or --yes flag) for the actual publish step"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Generate a systemd service so that my vault at /home/alice/vaults/work syncs continuously on my Linux server as user alice. I want it to restart if it crashes and log to journald.",
+      "expected_output": "Either use generate_systemd_service.py OR produce a valid systemd .service unit with: User=alice, ExecStart=ob sync --continuous --path /home/alice/vaults/work, After=network-online.target, Restart=on-failure, StandardOutput=journal, plus installation instructions (systemctl daemon-reload, enable --now). Recommend pull-only mode.",
+      "files": [],
+      "expectations": [
+        "Unit file includes User=alice",
+        "ExecStart points to ob sync --continuous --path /home/alice/vaults/work",
+        "After=network-online.target is present",
+        "Restart=on-failure is present",
+        "StandardOutput=journal or equivalent for journald logging",
+        "Includes systemctl daemon-reload and enable --now instructions"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "I'm trying to sync a vault that was shared with me. I can see it in ob sync-list-remote but ob sync-setup keeps failing with 'Failed to validate password'. I'm not using e2ee. What should I try?",
+      "expected_output": "Reference the shared vault bug (issue #12). Primary suggestions: (1) try ob sync-setup without --password and let it prompt interactively, (2) use the vault's numeric ID instead of name, (3) wait a few minutes if freshly shared, (4) confirm with the owner whether e2ee is actually enabled.",
+      "files": [],
+      "expectations": [
+        "Mentions the shared vault issue (#12 or equivalent)",
+        "Suggests trying without --password (interactive prompt)",
+        "Suggests using vault ID instead of name from ob sync-list-remote",
+        "Notes the issue exists in current version and may need upstream fix"
+      ]
+    }
+  ]
+}

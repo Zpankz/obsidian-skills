@@ -1,18 +1,55 @@
 ---
 name: obsidian-bases
-description: Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.
+description: "Use this skill for creating, repairing, or explaining Obsidian Bases `.base` files: live table, card, list, or map views over notes with filters, formulas, grouping, and summaries. Trigger whenever the user wants a database-like Obsidian view, asks for a Base/Bases file, or needs formulas and filters over note metadata. Do not use for plain Markdown tables or Dataview unless the request is specifically about Bases."
 ---
 
-# Obsidian Bases Skill
+# Obsidian Bases
 
-## Workflow
+Use this skill when the output should be a **`.base` file** that stays live as notes change.
 
-1. **Create the file**: Create a `.base` file in the vault with valid YAML content
-2. **Define scope**: Add `filters` to select which notes appear (by tag, folder, property, or date)
-3. **Add formulas** (optional): Define computed properties in the `formulas` section
-4. **Configure views**: Add one or more views (`table`, `cards`, `list`, or `map`) with `order` specifying which properties to display
-5. **Validate**: Verify the file is valid YAML with no syntax errors. Check that all referenced properties and formulas exist. Common issues: unquoted strings containing special YAML characters, mismatched quotes in formula expressions, referencing `formula.X` without defining `X` in `formulas`
-6. **Test in Obsidian**: Open the `.base` file in Obsidian to confirm the view renders correctly. If it shows a YAML error, check quoting rules below
+## When to use this skill
+
+Typical triggers:
+- "make a base for my notes"
+- "create a table/cards view in Obsidian Bases"
+- "filter notes by metadata"
+- "write a formula for a base"
+- "fix this `.base` YAML"
+- "turn these note properties into a dashboard"
+
+Prefer Bases when the user wants a reusable, query-driven view over vault notes. If they only need a static Markdown table, a base may be unnecessary.
+
+## Recommended workflow
+
+1. **Infer the data model**
+   - what notes should be included?
+   - which properties matter?
+   - what should the user be able to sort, group, or summarize?
+2. **Define the global scope first**
+   - use top-level `filters` to describe the dataset
+3. **Add formulas only for derived values**
+   - age, status icons, time remaining, labels, formatted strings
+4. **Design views around user tasks**
+   - `table` for dense scanning
+   - `cards` for gallery/library views
+   - `list` for minimal views
+   - `map` for geo data
+5. **Validate aggressively**
+   - YAML syntax
+   - quote handling
+   - every referenced `formula.X` exists
+   - all properties in `order`, `groupBy`, and `summaries` are real
+6. **Explain the result in user terms**
+   - what notes it includes, what each formula does, and how the views differ
+
+## Design checklist
+
+Before writing a base, make sure you know:
+- the folder/tag/property filters that define the dataset
+- the key columns or cards the user cares about
+- whether missing values are possible and need `if()` guards
+- whether grouping or summaries are important
+- whether a formula should return a number, string, date, boolean, or duration-derived number
 
 ## Schema
 

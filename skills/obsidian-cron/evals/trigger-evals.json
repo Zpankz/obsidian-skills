@@ -1,0 +1,82 @@
+[
+  {
+    "query": "can you set up my Obsidian vault so every weekday at 6:45am it opens the daily note, adds my morning checklist, and dumps active tasks to a json file in ~/tmp for another agent to read? i'm on macOS Sonoma",
+    "should_trigger": true
+  },
+  {
+    "query": "I need a launchd plist plus shell script for an Obsidian morning routine. The job should run at 7 each day and write logs somewhere sensible.",
+    "should_trigger": true
+  },
+  {
+    "query": "how would you schedule an obsidian cli command from cron on Linux so it exports notes tagged #publish every 4 hours",
+    "should_trigger": true
+  },
+  {
+    "query": "while Obsidian is open, I want a command to fire every 30 seconds and update a status note. Should I use Shell Commands or something else?",
+    "should_trigger": true
+  },
+  {
+    "query": "I want true cron syntax inside Obsidian itself because I need app.vault access in the callback. Show me how to do a 0 6 * * * job.",
+    "should_trigger": true
+  },
+  {
+    "query": "please wire up an obsidian-cron job that waits for sync, then runs a little JS function every night to count files and log the result",
+    "should_trigger": true
+  },
+  {
+    "query": "my vault should automatically run some bootstrap JS every time Obsidian launches so it can initialize an agent helper. Not repeating, just startup.",
+    "should_trigger": true
+  },
+  {
+    "query": "What's the best way to run a Templater or JS Engine startup script on app launch for Obsidian? I don't need a repeating job.",
+    "should_trigger": true
+  },
+  {
+    "query": "I need a file watcher in Obsidian: whenever something new lands in Inbox/, run a shell command and notify me if frontmatter is missing",
+    "should_trigger": true
+  },
+  {
+    "query": "help me build a scheduled vault maintenance routine: unresolved links check every night, weekly note command every Sunday, and logs for each run",
+    "should_trigger": true
+  },
+  {
+    "query": "write me a Dataview query that lists all unfinished tasks due this week in my Projects folder",
+    "should_trigger": false
+  },
+  {
+    "query": "my Obsidian plugin build is failing after I changed main.ts and settings.ts. can you debug the TypeScript error and fix the code?",
+    "should_trigger": false
+  },
+  {
+    "query": "I just want to create today's daily note and append a checklist once right now from the terminal, no scheduler involved",
+    "should_trigger": false
+  },
+  {
+    "query": "can you review my release checklist, bump the plugin version, and tell me if this Obsidian plugin is ready to publish",
+    "should_trigger": false
+  },
+  {
+    "query": "how do I write a Templater template that inserts the current date and my meeting agenda when I create a new note",
+    "should_trigger": false
+  },
+  {
+    "query": "please create a shell command for my Mac that zips a folder every night. this has nothing to do with Obsidian, just normal system automation",
+    "should_trigger": false
+  },
+  {
+    "query": "I need help organizing my vault folder structure and renaming a bunch of notes, but nothing has to run automatically",
+    "should_trigger": false
+  },
+  {
+    "query": "show me how to use the Obsidian CLI to reload my plugin and capture dev errors after a build",
+    "should_trigger": false
+  },
+  {
+    "query": "I'm making an Obsidian plugin that lets users schedule reminders. I need architecture advice and API patterns, not an automation setup for my own vault",
+    "should_trigger": false
+  },
+  {
+    "query": "can you convert my markdown checklist into a recurring tasks format for the Tasks plugin",
+    "should_trigger": false
+  }
+]

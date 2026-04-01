@@ -1,0 +1,34 @@
+[
+  {
+    "query": "Typing in this React plugin search panel is janky. What optimizations matter most?",
+    "should_trigger": true
+  },
+  {
+    "query": "Can we lazy-load this heavy React inspector panel so the plugin view opens faster?",
+    "should_trigger": true
+  },
+  {
+    "query": "This plugin settings screen rerenders too much. Please focus on client-side performance fixes.",
+    "should_trigger": true
+  },
+  {
+    "query": "The React UI works, but bundle size and event-listener patterns need cleanup.",
+    "should_trigger": true
+  },
+  {
+    "query": "I need a broad React architecture refactor using compound components and providers.",
+    "should_trigger": false
+  },
+  {
+    "query": "What shadcn card, dialog, and form primitives should I choose for this plugin UI?",
+    "should_trigger": false
+  },
+  {
+    "query": "Please rename these commands and improve the wording of the notices.",
+    "should_trigger": false
+  },
+  {
+    "query": "Can you restyle this plugin modal with better CSS variables and selector scoping?",
+    "should_trigger": false
+  }
+]

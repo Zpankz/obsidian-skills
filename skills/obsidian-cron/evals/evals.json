@@ -1,0 +1,41 @@
+{
+  "skill_name": "obsidian-cron",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm on a MacBook and want my Research vault to open the daily note every morning at 7:00, append two checklist items, and export all active notes to JSON for another agent. Please set this up in the most reliable way and show me exactly what files to create.",
+      "expected_output": "A working automation plan that prefers launchd over cron on macOS, includes a shell script plus LaunchAgent plist, uses explicit Obsidian CLI commands, and explains how to test and inspect logs.",
+      "files": [],
+      "expectations": [
+        "Chooses macOS launchd rather than plain cron for a scheduled Mac workflow",
+        "Produces both a script file and scheduler configuration rather than only high-level advice",
+        "Uses concrete Obsidian CLI commands for the daily note and export steps",
+        "Explains manual validation and log locations"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Inside Obsidian, I want something lightweight that reacts whenever a file in my Inbox folder changes and shows me a quick notification if the note is missing frontmatter. The job only matters while the app is open. What should I use and how would you wire it up?",
+      "expected_output": "A solution that picks an in-app event-driven tool, preferably Shell Commands, explains why an OS scheduler is the wrong fit, and gives a concrete event-based setup pattern.",
+      "files": [],
+      "expectations": [
+        "Selects an in-app event-driven approach instead of launchd or cron",
+        "Distinguishes file events from time-based scheduling",
+        "Provides a concrete setup pattern or command example",
+        "Notes that the automation only works while Obsidian is open"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need some bootstrap logic to run once when Obsidian starts so it can initialize my agent environment and maybe load a helper script from the vault. I do not need a repeating schedule. Which approach should I use?",
+      "expected_output": "A startup-script oriented answer that recommends CodeScript Toolkit, JS Engine, or Templater startup templates, explicitly says this is not a cron problem, and shows a minimal startup script pattern.",
+      "files": [],
+      "expectations": [
+        "Reframes the task as startup execution rather than recurring scheduling",
+        "Recommends an appropriate startup mechanism such as CodeScript Toolkit, JS Engine, or Templater startup templates",
+        "Includes a minimal startup script or template example",
+        "Avoids suggesting cron or launchd as the primary solution"
+      ]
+    }
+  ]
+}

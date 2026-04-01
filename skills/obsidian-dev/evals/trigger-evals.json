@@ -1,0 +1,82 @@
+[
+  {
+    "query": "I'm building an Obsidian plugin and need to add a new command plus a settings tab. Can you update the TypeScript structure so it follows Obsidian conventions?",
+    "should_trigger": true
+  },
+  {
+    "query": "please help me fix this main.ts bug in my Obsidian plugin. the command runs, but it edits the file the wrong way and breaks cursor position.",
+    "should_trigger": true
+  },
+  {
+    "query": "how should I implement a custom ItemView in an Obsidian plugin and keep it memory-safe when panes open and close",
+    "should_trigger": true
+  },
+  {
+    "query": "I need to wire frontmatter updates correctly in my plugin without clobbering user edits. What's the right Obsidian API pattern?",
+    "should_trigger": true
+  },
+  {
+    "query": "can you refactor my plugin code so commands, settings, and helper modules are organized sanely for an Obsidian project",
+    "should_trigger": true
+  },
+  {
+    "query": "my plugin works on desktop but behaves weirdly on mobile. what Obsidian development patterns should I check first?",
+    "should_trigger": true
+  },
+  {
+    "query": "show me the right way to add a ribbon icon, command, and modal in an Obsidian plugin without leaking events",
+    "should_trigger": true
+  },
+  {
+    "query": "I want to build a small Obsidian theme feature and need guidance on CSS structure, variables, and compatibility with the app",
+    "should_trigger": true
+  },
+  {
+    "query": "I'm adding autocomplete to an Obsidian plugin setting. Which classes and UI patterns should I use?",
+    "should_trigger": true
+  },
+  {
+    "query": "help me implement an Obsidian plugin feature that uses requestUrl, normalizePath, and proper cleanup. I want code that would pass review.",
+    "should_trigger": true
+  },
+  {
+    "query": "can you bump the version in manifest.json, update versions.json, and tell me if this plugin is ready for release",
+    "should_trigger": false
+  },
+  {
+    "query": "I need to sync the latest obsidian api and developer docs refs into my .ref folder before I start coding",
+    "should_trigger": false
+  },
+  {
+    "query": "write a DataviewJS snippet that groups tasks by due date and shows counts by project",
+    "should_trigger": false
+  },
+  {
+    "query": "please package this skill as a .skill file and validate the frontmatter",
+    "should_trigger": false
+  },
+  {
+    "query": "I just want to edit a markdown note in my vault and clean up the headings and wikilinks",
+    "should_trigger": false
+  },
+  {
+    "query": "how do I schedule an Obsidian CLI job to run every morning with launchd on my Mac",
+    "should_trigger": false
+  },
+  {
+    "query": "can you review my changelog and release notes for an Obsidian plugin before I publish it",
+    "should_trigger": false
+  },
+  {
+    "query": "what's the command to reload a plugin and inspect runtime errors in a running Obsidian app after a build",
+    "should_trigger": false
+  },
+  {
+    "query": "I need a Tasks plugin query that shows overdue items and hides completed tasks",
+    "should_trigger": false
+  },
+  {
+    "query": "please create a shell script that backs up my notes folder every night",
+    "should_trigger": false
+  }
+]

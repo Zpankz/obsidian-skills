@@ -1,0 +1,34 @@
+[
+  {
+    "query": "This shadcn-based settings page looks inconsistent. Can you clean up tokens, variants, and spacing?",
+    "should_trigger": true
+  },
+  {
+    "query": "Please replace these raw Tailwind colors in my shadcn dialog with semantic tokens and theme variables.",
+    "should_trigger": true
+  },
+  {
+    "query": "The shadcn components work, but visually they feel off. Make them more polished without rewriting structure.",
+    "should_trigger": true
+  },
+  {
+    "query": "Can you improve icon usage, variants, and theming in this shadcn plugin panel?",
+    "should_trigger": true
+  },
+  {
+    "query": "Which shadcn primitives should I choose for a settings form with cards, alerts, and tabs?",
+    "should_trigger": false
+  },
+  {
+    "query": "This plugin does not use shadcn at all; I just need ordinary styles.css and Obsidian variables.",
+    "should_trigger": false
+  },
+  {
+    "query": "These settings labels and command names need clearer wording.",
+    "should_trigger": false
+  },
+  {
+    "query": "Should this React modal become a provider-backed compound component instead of accepting lots of flags?",
+    "should_trigger": false
+  }
+]

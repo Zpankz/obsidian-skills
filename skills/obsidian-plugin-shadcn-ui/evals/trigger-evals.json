@@ -1,0 +1,34 @@
+[
+  {
+    "query": "This plugin uses React and Tailwind. Can you add shadcn/ui and build a nicer settings page with cards and dialogs?",
+    "should_trigger": true
+  },
+  {
+    "query": "How do I run shadcn init in this repo and choose the right components for a plugin sidebar?",
+    "should_trigger": true
+  },
+  {
+    "query": "I have a components.json file already. Help me use shadcn to make this plugin view feel like a real app.",
+    "should_trigger": true
+  },
+  {
+    "query": "Can you use shadcn/ui primitives for this onboarding flow, including forms, alerts, and an empty state?",
+    "should_trigger": true
+  },
+  {
+    "query": "My plugin just needs generic styles.css cleanup and better selector scoping, no React stack changes.",
+    "should_trigger": false
+  },
+  {
+    "query": "These command names and notices need better wording and sentence case.",
+    "should_trigger": false
+  },
+  {
+    "query": "This React component tree is messy. Should I use compound components and providers?",
+    "should_trigger": false
+  },
+  {
+    "query": "The React UI already exists; I only need targeted rerender and bundle-size advice.",
+    "should_trigger": false
+  }
+]

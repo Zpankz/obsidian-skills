@@ -1,0 +1,82 @@
+[
+  {
+    "query": "can you run the build and lint for this Obsidian plugin repo, then tell me what's broken before I open a PR",
+    "should_trigger": true
+  },
+  {
+    "query": "I need to bump the version, update release files, and make sure this Obsidian plugin is ready to publish safely",
+    "should_trigger": true
+  },
+  {
+    "query": "please sync the latest Obsidian reference repos into .ref and update whatever status file this project uses to track sync freshness",
+    "should_trigger": true
+  },
+  {
+    "query": "before release, can you check manifest-related packaging issues, run the standard commands, and tell me what still needs human testing",
+    "should_trigger": true
+  },
+  {
+    "query": "my Obsidian repo suddenly stopped building on this machine. can you diagnose the environment/tooling problem and get the build green again",
+    "should_trigger": true
+  },
+  {
+    "query": "I want a safe release prep pass for this plugin: build, lint, version files, checklist, and anything obvious I missed",
+    "should_trigger": true
+  },
+  {
+    "query": "can you update the reference materials from upstream and summarize what changed that might matter for this Obsidian project",
+    "should_trigger": true
+  },
+  {
+    "query": "please validate this Obsidian project operationally: dependency install, build workflow, troubleshooting, and release readiness",
+    "should_trigger": true
+  },
+  {
+    "query": "I'm about to cut a release for my Obsidian theme. help me do the boring operational bits cleanly and don't commit anything automatically",
+    "should_trigger": true
+  },
+  {
+    "query": "check whether the standard pnpm commands still work in this Obsidian repo and fix any environment/setup issues you find",
+    "should_trigger": true
+  },
+  {
+    "query": "help me implement a new command in my Obsidian plugin and refactor the code layout while you're there",
+    "should_trigger": false
+  },
+  {
+    "query": "I need advice on the right Obsidian API for editing the active editor without breaking cursor position",
+    "should_trigger": false
+  },
+  {
+    "query": "write a Templater template that creates a new meeting note with attendees and agenda sections",
+    "should_trigger": false
+  },
+  {
+    "query": "how do I schedule a launchd job that runs Obsidian CLI commands every morning at 7",
+    "should_trigger": false
+  },
+  {
+    "query": "can you create a Datacore view that shows all project notes grouped by status",
+    "should_trigger": false
+  },
+  {
+    "query": "I just want to clean up markdown links and frontmatter in a handful of notes in my vault",
+    "should_trigger": false
+  },
+  {
+    "query": "please help me debug a memory leak in my plugin's custom view lifecycle",
+    "should_trigger": false
+  },
+  {
+    "query": "what are the official naming rules for plugin IDs and descriptions in manifest.json",
+    "should_trigger": false
+  },
+  {
+    "query": "I want to package a standalone skill and optimize its trigger description, not work on an Obsidian repo build",
+    "should_trigger": false
+  },
+  {
+    "query": "can you generate release notes from the file diffs but don't run any build or validation commands",
+    "should_trigger": false
+  }
+]
