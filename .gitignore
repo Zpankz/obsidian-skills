@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+
+# Local agent / editor configuration
+.claude/
+.cursor/
+.factory/
+.pi/
+.windsurf/
+CLAUDE.md
+
+# Local skill tooling and caches
+.caliber/
+.tmp/
+skills-lock.json
+
+# Generated / exported local workspaces
+breadcrumbs-docs-vault/
+dist/
+skill-improvement-workspace/
+
+# Local helper scripts
+improve-skills.sh
