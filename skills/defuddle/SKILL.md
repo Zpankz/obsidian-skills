@@ -1,6 +1,6 @@
 ---
 name: defuddle
-description: "Use this skill to extract clean Markdown from ordinary web pages with Defuddle when the user gives a URL to read, summarize, archive, or save. Trigger for articles, blog posts, docs, tutorials, and news pages where the user wants the main content without navigation, ads, or cookie banners. Prefer this over raw HTML or generic fetch tools for normal pages, but not for login-protected or heavily JavaScript-driven sites."
+description: Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md — those are already markdown, use WebFetch directly.
 ---
 
 # Defuddle Web Content Extractor
