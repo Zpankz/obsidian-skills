@@ -1,6 +1,6 @@
 ---
 name: code-intelligence
-description: Set up and use GitNexus and Prowl code intelligence engines within an Obsidian vault for plugin development, impact analysis, safe refactoring, and architecture exploration. Use when the user mentions code graphs, knowledge graphs for code, GitNexus, Prowl, codebase indexing, blast radius, impact analysis, call chains, symbol context, code intelligence, or wants to understand/refactor/debug Obsidian plugin source code using graph-powered tools. Also trigger when the user is developing an Obsidian plugin and needs dependency-aware refactoring, multi-file rename coordination, or execution flow tracing.
+description: Use GitNexus and Prowl for graph-powered code intelligence in Obsidian plugin development. Trigger on blast radius, impact analysis, call chains, codebase indexing, or dependency-aware refactoring.
 ---
 
 # Code Intelligence Skill

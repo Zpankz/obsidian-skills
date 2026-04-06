@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-ui-ux
-description: Use this skill when defining or polishing Obsidian plugin commands, notices, settings-tab labels, locale strings, button text, placeholders, headings, or other user-facing copy and interaction wording. Trigger on requests about naming, sentence case, labels feeling off, settings wording, command text, or UI consistency. Prefer this over styling skills when the main issue is words and interaction semantics, not CSS or theming.
+description: Polish Obsidian plugin commands, notices, labels, and user-facing copy. Trigger on naming, sentence case, settings wording, or UI text consistency.
 ---
 
 # Obsidian Plugin UI and UX

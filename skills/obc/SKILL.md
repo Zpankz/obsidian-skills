@@ -1,6 +1,6 @@
 ---
 name: obc
-description: "30 Obsidian vault commands for AI-augmented PKM — daily ops, vault intelligence, thinking tools, creation, strategy. Triggers on /context /today /close-day /schedule /7plan /map /emerge /connect /contradict /drift /backlinks /graduate /graph /audit /ghost /trace /challenge /stranger /compound /ideas /learned /weekly-learnings /make /xdaily /xarticle /synthesize /evolve /money /leverage /guests, or any request to read/analyze an Obsidian vault, plan a day/week, find connections, generate ideas from vault patterns, challenge beliefs, trace idea evolution, or any structured vault interaction. Trigger proactively — turns a passive vault into an active thinking partner."
+description: "Run OBC vault commands for AI-augmented PKM: daily planning, vault analysis, idea connections, and structured thinking workflows. Trigger on /today, /connect, /map, or any vault interaction command."
 ---
 
 # OBC — Obsidian Commands

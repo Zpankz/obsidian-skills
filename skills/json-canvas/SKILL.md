@@ -1,6 +1,6 @@
 ---
 name: json-canvas
-description: "Use this skill for creating, editing, or validating raw JSON Canvas `.canvas` files with nodes, edges, groups, IDs, coordinates, and layout-aware connections. Trigger whenever the user wants a mind map, flowchart, board, or canvas stored as JSON Canvas or needs broken canvas structure repaired. Do not use for Mermaid, Excalidraw, or ordinary Markdown diagrams."
+description: "Create, edit, or validate JSON Canvas .canvas files with nodes, edges, groups, and layout-aware connections. Trigger on mind maps, flowcharts, boards, or canvas repair."
 ---
 
 # JSON Canvas

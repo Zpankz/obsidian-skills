@@ -540,7 +540,7 @@ This skill can be combined with `video-add-chapters` for a complete video proces
 
 ```bash
 # Full processing with transcript reuse
-python process_video.py "video.mp4" --language ko
+python edit_video_remove_pauses.py "video.mp4" --language ko
 ```
 
 The `--output-pauses` flag exports pause data in JSON format for chapter timestamp remapping:

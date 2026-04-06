@@ -1,6 +1,6 @@
 ---
 name: obsidian-ops
-description: "Use this skill for the operational side of Obsidian projects: builds, linting, reference syncing, environment troubleshooting, version bumps, release prep, and packaging. Reach for it whenever the user wants to run the standard project commands, diagnose why an Obsidian repo no longer builds cleanly, sync upstream refs, or check whether a plugin/theme is safe to release."
+description: "Handle Obsidian project operations: builds, linting, version bumps, release prep, and environment troubleshooting. Trigger on build failures, release packaging, or ref syncing."
 ---
 
 # Obsidian Operations Skill

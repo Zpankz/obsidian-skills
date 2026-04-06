@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-dev
-description: Use this skill when implementing or reviewing Obsidian plugins and you need the full rule set: ESLint-driven conventions, lifecycle safety, API usage, UI/UX, accessibility, styling, and submission requirements. This umbrella skill also routes to specialized `obsidian-plugin-*` subskills for focused work.
+description: Umbrella skill for Obsidian plugin development covering conventions, lifecycle safety, API usage, and submission. Routes to specialized obsidian-plugin-* subskills.
 license: MIT
 metadata:
   version: 1.4.0
@@ -23,6 +23,9 @@ Use this umbrella skill when working broadly on Obsidian plugins or when a task 
 - `obsidian-plugin-shadcn-ui`
 - `obsidian-plugin-react-components`
 - `obsidian-plugin-react-best-practices`
+- `obsidian-plugin-react-performance`
+- `obsidian-plugin-shadcn-composition`
+- `obsidian-plugin-shadcn-styling`
 - `obsidian-dev`
 - `obsidian-ops`
 

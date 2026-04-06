@@ -1,22 +1,6 @@
 ---
 name: obsidian-learning-path
-description: |
-  Generating optimal learning paths as Obsidian knowledge graph vaults by unifying
-  Zeigarnik Effect tension threading, ZPD-calibrated edge sequencing, PKG/GKG gap
-  differential analysis, RPP L0-L3 Pareto compression, MCMC-Hamiltonian path
-  traversal with eigenvector centrality, compound learning self-improvement loops,
-  BCME theorem-grounded plateau escape with 7-axis mechanism injection, and
-  homoiconic architectural self-assessment with self-topology measurement (η≥4).
-  Produces .md + .canvas + .base vault files with injected graph analytics.
-  Adapted for the obsidian-skills ecosystem: integrates with obsidian-cli for live
-  vault operations, ob for headless sync, obsidian-vault-manager for vault registry,
-  dataview for querying, obsidian-yaml-frontmatter for property formatting,
-  obsidian-dream for memory consolidation, and obsidian-canvas/json-canvas for
-  visual maps. Use /olp build, /olp scan, /olp gap, /olp traverse, /olp compound,
-  /olp status, /olp verify, /olp refine, /olp meta, /olp self-eval, /olp improve,
-  /olp consolidate. Use when generating study curricula, knowledge graph vaults,
-  adaptive learning systems, exam prep paths, or any domain requiring optimal
-  traversal of a knowledge space.
+description: Generate optimal learning paths as Obsidian vaults with .md, .canvas, and .base files. Use when building structured curricula or knowledge graph-based study plans.
 tags: [pkm, learning, knowledge-graph, obsidian, mcmc, zpd, zeigarnik, spaced-repetition]
 ---
 

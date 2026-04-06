@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-css-styling
-description: Use this skill when styling an Obsidian plugin view, modal, setting tab, ribbon surface, or custom UI with ordinary CSS or `styles.css`, especially if the user mentions CSS cleanup, theme compatibility, container scoping, layout polish, spacing, selectors, or Obsidian CSS variables. Prefer this over shadcn-specific styling skills when the repo is not clearly using shadcn/ui.
+description: Style Obsidian plugin views, modals, and settings with CSS and styles.css. Trigger on CSS cleanup, theme compatibility, container scoping, or Obsidian CSS variables.
 ---
 
 # Obsidian Plugin CSS Styling

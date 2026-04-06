@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-shadcn-composition
-description: Use this skill when assembling richer React-based Obsidian plugin interfaces with shadcn/ui components, especially if the user mentions settings forms, cards, tabs, dialogs, sheets, onboarding flows, empty states, alerts, or wants help choosing the right primitives for a plugin screen. Covers forms, cards, tabs, overlays, alerts, empty states, skeletons, separators, avatars, and component-composition rules that keep plugin UI accessible and maintainable.
+description: Compose Obsidian plugin screens from shadcn/ui primitives like forms, cards, tabs, dialogs, and sheets. Trigger on choosing or assembling shadcn components for plugin UI.
 ---
 
 # Obsidian Plugin shadcn Composition

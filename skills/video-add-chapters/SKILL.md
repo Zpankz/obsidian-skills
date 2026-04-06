@@ -1,6 +1,6 @@
 ---
 name: video-add-chapters
-description: Add chapters to videos by transcribing, analyzing, and generating structured markdown documents with YouTube chapter markers. Optionally generate highlight videos.
+description: Add chapters to videos by transcribing, analyzing, and generating structured markdown with YouTube chapter markers. Use when you have a long video that needs chapter segmentation or highlight extraction.
 allowed-tools: [Read, Write, Bash, Glob]
 license: MIT
 ---
@@ -273,7 +273,7 @@ Use `video-full-process` skill for a unified pipeline that:
 
 ```bash
 # From video-full-process skill directory
-python process_video.py "video.mp4" --language ko
+python ../video-full-process/process_video.py "video.mp4" --language ko
 ```
 
 ### Transcript Reuse

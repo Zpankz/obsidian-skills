@@ -4,17 +4,18 @@ These skills follow the [Agent Skills specification](https://agentskills.io/spec
 
 ## Available Skills
 
-This repo currently contains **98 skills**, audited into granular marketplace bundles so users can install just the parts they need.
+This repo currently contains **98 skills**, audited into **14 granular marketplace bundles** (plus one convenience meta-bundle) so users can install just the parts they need.
 
 ### Marketplace bundles
 
 | Plugin | Focus | Included skills |
 |-------|-------|-----------------|
-| `obsidian-skills-notes` | Core note authoring, structure, references, and vault interaction | `defuddle`, `obsidian-bases`, `obsidian-cli`, `obsidian-links`, `obsidian-markdown`, `obsidian-markdown-structure`, `obsidian-ref`, `obsidian-yaml-frontmatter` |
+| `obsidian-skills-notes` | Core note authoring, structure, references, and vault interaction | `defuddle`, `obsidian-bases`, `obsidian-links`, `obsidian-markdown`, `obsidian-markdown-structure`, `obsidian-ref`, `obsidian-vault-manager`, `obsidian-yaml-frontmatter` |
 | `obsidian-skills-plugins` | Plugin-specific syntax and workflows | `advanced-canvas`, `claudian`, `datacore`, `dataview`, `internetvin-terminal`, `obsidian42-brat`, `tasks`, `templater`, `viva-examiner`, `viva-llm` |
-| `obsidian-skills-automation` | Automation, sync, and headless vault ops | `ob` (`obsidian-headless`), `obsidian-cron`, `obsidian-vault-manager` |
-| `obsidian-skills-workflows` | Higher-level AI-assisted PKM workflows | `ai4pkm-helper`, `gobi-onboarding`, `interactive-writing-assistant`, `obc`, `obsidian-dream`, `obsidian-learning-path` |
-| `obsidian-skills-dev` | Obsidian development, debugging, project ops, theme work, code intelligence, MCP Apps/elicitation architecture, skill discovery, and Gemini API development guidance | `code-intelligence`, `find-skills`, `gemini-api-dev`, `gemini-interactions-api`, `gemini-live-api-dev`, `obsidian-dev`, `obsidian-devtools`, `obsidian-mcp-apps`, `obsidian-ops`, `obsidian-theme-dev`, `skill-creator` |
+| `obsidian-skills-automation` | CLI operations, headless sync, scheduled jobs, and vault commands | `ob` (`obsidian-headless`), `obc`, `obsidian-cli`, `obsidian-cron` |
+| `obsidian-skills-workflows` | AI-augmented PKM workflows | `ai4pkm-helper`, `gobi-onboarding`, `interactive-writing-assistant`, `obsidian-dream`, `obsidian-learning-path`, `obsidian-mcp-apps` |
+| `obsidian-skills-dev` | Obsidian plugin and theme development, debugging, project ops, code intelligence, and skill discovery | `code-intelligence`, `find-skills`, `obsidian-dev`, `obsidian-devtools`, `obsidian-ops`, `obsidian-theme-dev`, `skill-creator` |
+| `obsidian-skills-gemini` | Gemini API development: text generation, multimodal, Interactions API, and Live API streaming | `gemini-api-dev`, `gemini-interactions-api`, `gemini-live-api-dev` |
 | `obsidian-skills-plugin-devkit` | Imported Obsidian plugin development toolkit | `obsidian-plugin-dev` plus 9 specialized `obsidian-plugin-*` skills |
 | `obsidian-skills-plugin-ui` | React-focused plugin UI toolkit | `obsidian-plugin-shadcn-ui`, `obsidian-plugin-shadcn-styling`, `obsidian-plugin-shadcn-composition`, `obsidian-plugin-react-best-practices`, `obsidian-plugin-react-performance`, `obsidian-plugin-react-components` |
 | `obsidian-skills-visual` | Canvas, diagramming, and presentation workflows | `excalidraw-diagram`, `json-canvas`, `markdown-slides`, `obsidian-canvas`, `obsidian-mermaid` |
@@ -32,8 +33,8 @@ Some of the strongest workflows in this repo come from combining bundles rather 
 - **Breadcrumbs + notes/plugins**: use `obsidian-skills-breadcrumbs` with `obsidian-skills-notes` and `obsidian-skills-plugins` for docs work that mixes wikilinks, frontmatter, Dataview inline fields, and terminology enforcement.
 - **Extended Graph + dev**: use `obsidian-skills-extended-graph` with `obsidian-skills-dev` when adding plugin features that also touch Obsidian API patterns, release hygiene, or debugging.
 - **Smart Connections + dev/workflows**: use `obsidian-skills-smart-connections` with `obsidian-skills-dev` or `obsidian-skills-workflows` when collection pipelines feed user-facing workflows and plugin UX.
-- **Gemini API + plugins/media**: use `obsidian-skills-dev` together with `obsidian-skills-plugins` or `obsidian-skills-media` when building Gemini-powered Obsidian plugins, Live voice flows, or image-generation/document workflows.
-- **MCP Apps + visual/plugin devkit**: use `obsidian-skills-dev` with `obsidian-skills-visual` and `obsidian-skills-plugin-devkit` when embedding localhost-backed apps like Excalidraw in Obsidian, designing custom views, or mapping MCP elicitation to safe native vault workflows.
+- **Gemini API + plugins/media**: use `obsidian-skills-gemini` together with `obsidian-skills-plugins` or `obsidian-skills-media` when building Gemini-powered Obsidian plugins, Live voice flows, or image-generation/document workflows.
+- **MCP Apps + visual/plugin devkit**: use `obsidian-skills-workflows` with `obsidian-skills-visual` and `obsidian-skills-plugin-devkit` when embedding localhost-backed apps like Excalidraw in Obsidian, designing custom views, or mapping MCP elicitation to safe native vault workflows.
 - **Plugin devkit + dev/plugins**: use `obsidian-skills-plugin-devkit` with `obsidian-skills-dev` and `obsidian-skills-plugins` when a task spans plugin scaffolding, lifecycle safety, accessibility, release checks, and plugin-specific UX rules.
 - **Plugin UI + devkit**: use `obsidian-skills-plugin-ui` with `obsidian-skills-plugin-devkit` when an Obsidian plugin uses React and you want both implementation safety and higher-quality UI composition, theming, or performance.
 - **NoteMD Pro + notes/visual/media**: use `obsidian-skills-notemdpro` with `obsidian-skills-notes`, `obsidian-skills-visual`, or `obsidian-skills-media` for markdown generation pipelines that also need link validation, Mermaid output, diagrams, or imported source material.
@@ -46,11 +47,11 @@ Some of the strongest workflows in this repo come from combining bundles rather 
 |---|---|
 | [defuddle](skills/defuddle) | Extracts clean markdown from ordinary web pages for reading, summarizing, or saving into a vault |
 | [obsidian-bases](skills/obsidian-bases) | Creates and repairs Obsidian Bases `.base` files with views, filters, formulas, and summaries |
-| [obsidian-cli](skills/obsidian-cli) | Operates a running Obsidian app through the `obsidian` CLI for live note and app actions |
 | [obsidian-links](skills/obsidian-links) | Formats and validates Obsidian wikilinks, section links, and path conventions |
 | [obsidian-markdown](skills/obsidian-markdown) | Creates and fixes Obsidian-flavored Markdown with wikilinks, embeds, callouts, tags, and note structure |
 | [obsidian-markdown-structure](skills/obsidian-markdown-structure) | Enforces frontmatter placement, heading hierarchy, and overall markdown document structure |
 | [obsidian-ref](skills/obsidian-ref) | Provides technical references for manifests, file formats, and Obsidian UX guidance |
+| [obsidian-vault-manager](skills/obsidian-vault-manager) | Registers local vaults and manages notes, metadata, links, tags, and attachments inside them |
 | [obsidian-yaml-frontmatter](skills/obsidian-yaml-frontmatter) | Standardizes YAML frontmatter keys, value types, formatting, and link lists |
 
 #### `obsidian-skills-plugins`
@@ -73,8 +74,9 @@ Some of the strongest workflows in this repo come from combining bundles rather 
 | Skill | What it covers |
 |---|---|
 | [ob / obsidian-headless](skills/ob) | Runs headless Obsidian Sync and Publish workflows with the `ob` CLI in servers, CI, and automation |
+| [obc](skills/obc) | Adds 30 high-level Obsidian vault commands for planning, reflection, discovery, strategy, and synthesis |
+| [obsidian-cli](skills/obsidian-cli) | Operates a running Obsidian app through the `obsidian` CLI for live note and app actions |
 | [obsidian-cron](skills/obsidian-cron) | Sets up scheduled and event-driven Obsidian automation with cron, launchd, scripts, and plugin timers |
-| [obsidian-vault-manager](skills/obsidian-vault-manager) | Registers local vaults and manages notes, metadata, links, tags, and attachments inside them |
 
 #### `obsidian-skills-workflows`
 
@@ -83,9 +85,9 @@ Some of the strongest workflows in this repo come from combining bundles rather 
 | [ai4pkm-helper](skills/ai4pkm-helper) | Configures AI4PKM orchestrators, agents, pollers, and multi-worker automation workflows |
 | [gobi-onboarding](skills/gobi-onboarding) | Provides an interactive Korean-language onboarding guide for Gobi Desktop 3.0 |
 | [interactive-writing-assistant](skills/interactive-writing-assistant) | Supports ideation, outlining, drafting, revision, and PKM-connected writing collaboration |
-| [obc](skills/obc) | Adds 30 high-level Obsidian vault commands for planning, reflection, discovery, strategy, and synthesis |
 | [obsidian-dream](skills/obsidian-dream) | Consolidates long-running PKM session learnings into persistent memory files through a guarded, automation-friendly workflow |
 | [obsidian-learning-path](skills/obsidian-learning-path) | Generates adaptive learning-path vaults, canvases, and Bases files for curriculum design, knowledge-gap analysis, and study sequencing |
+| [obsidian-mcp-apps](skills/obsidian-mcp-apps) | Builds Obsidian plugins that host MCP Apps, embed localhost-backed UIs like Excalidraw, and map elicitation to native approvals and forms |
 
 #### `obsidian-skills-dev`
 
@@ -93,17 +95,23 @@ Some of the strongest workflows in this repo come from combining bundles rather 
 |---|---|
 | [code-intelligence](skills/code-intelligence) | Uses GitNexus and Prowl knowledge-graph tooling for repo exploration, dependency-aware refactoring, impact analysis, and codebase tracing |
 | [find-skills](skills/find-skills) | Searches the broader agent-skills ecosystem and recommends installable skills when users need capabilities beyond what is already in the repo |
-| [gemini-api-dev](skills/gemini-api-dev) | Implements Gemini API integrations with current SDKs, models, multimodal inputs, tools, and structured outputs |
-| [gemini-interactions-api](skills/gemini-interactions-api) | Uses the Gemini Interactions API for stateful conversations, streaming, background tasks, tools, and agent-style flows |
-| [gemini-live-api-dev](skills/gemini-live-api-dev) | Builds realtime Gemini Live voice/video/text experiences with WebSockets, VAD, native audio, and session management |
 | [obsidian-dev](skills/obsidian-dev) | Implements and debugs Obsidian plugins and themes with repo-aware code patterns |
 | [obsidian-devtools](skills/obsidian-devtools) | Inspects and automates a running Obsidian instance via Chrome DevTools Protocol |
-| [obsidian-mcp-apps](skills/obsidian-mcp-apps) | Builds Obsidian plugins that host MCP Apps, embed localhost-backed UIs like Excalidraw, and map elicitation to native approvals and forms |
 | [obsidian-ops](skills/obsidian-ops) | Handles builds, linting, troubleshooting, packaging, release prep, and operational maintenance |
 | [obsidian-theme-dev](skills/obsidian-theme-dev) | Develops Obsidian themes with CSS/SCSS patterns, variables, and selector guidance |
 | [skill-creator](skills/skill-creator) | Creates, refines, benchmarks, and evaluates agent skills themselves |
 
-**Related bundles:** `obsidian-skills-plugin-devkit`, `obsidian-skills-plugin-ui`, `obsidian-skills-plugins`, `obsidian-skills-media`, `obsidian-skills-extended-graph`, `obsidian-skills-smart-connections`
+**Related bundles:** `obsidian-skills-gemini`, `obsidian-skills-plugin-devkit`, `obsidian-skills-plugin-ui`, `obsidian-skills-plugins`, `obsidian-skills-extended-graph`, `obsidian-skills-smart-connections`
+
+#### `obsidian-skills-gemini`
+
+| Skill | What it covers |
+|---|---|
+| [gemini-api-dev](skills/gemini-api-dev) | Implements Gemini API integrations with current SDKs, models, multimodal inputs, tools, and structured outputs |
+| [gemini-interactions-api](skills/gemini-interactions-api) | Uses the Gemini Interactions API for stateful conversations, streaming, background tasks, tools, and agent-style flows |
+| [gemini-live-api-dev](skills/gemini-live-api-dev) | Builds realtime Gemini Live voice/video/text experiences with WebSockets, VAD, native audio, and session management |
+
+**Related bundles:** `obsidian-skills-dev`, `obsidian-skills-plugins`, `obsidian-skills-media`
 
 #### `obsidian-skills-plugin-devkit`
 
@@ -330,6 +338,7 @@ Add this repo to your Claude Code marketplace, then install one or more bundles:
 Other available bundles:
 - `obsidian-skills-workflows`
 - `obsidian-skills-dev`
+- `obsidian-skills-gemini`
 - `obsidian-skills-plugin-devkit`
 - `obsidian-skills-plugin-ui`
 - `obsidian-skills-visual`
@@ -348,7 +357,7 @@ The old two-bundle layout has been replaced by more granular distributions.
 
 | Old bundle | Recommended replacement |
 |---|---|
-| `obsidian-skills-core` | `obsidian-skills-all` for a drop-in “install everything” experience, or install `obsidian-skills-notes` + `obsidian-skills-plugins` + `obsidian-skills-automation` + `obsidian-skills-workflows` + `obsidian-skills-dev` + `obsidian-skills-plugin-devkit` + `obsidian-skills-plugin-ui` + `obsidian-skills-visual` to stay closer to the previous core footprint |
+| `obsidian-skills-core` | `obsidian-skills-all` for a drop-in “install everything” experience, or install `obsidian-skills-notes` + `obsidian-skills-plugins` + `obsidian-skills-automation` + `obsidian-skills-workflows` + `obsidian-skills-dev` + `obsidian-skills-gemini` + `obsidian-skills-plugin-devkit` + `obsidian-skills-plugin-ui` + `obsidian-skills-visual` to stay closer to the previous core footprint |
 | `obsidian-skills-extras` | `obsidian-skills-workflows` + `obsidian-skills-media`, and add `obsidian-skills-visual` if you also want `markdown-slides` |
 
 Notes:

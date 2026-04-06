@@ -1,6 +1,6 @@
 ---
 name: obsidian-headless
-description: Expert CLI operator for the `ob` command — the headless Obsidian Sync and Publish client (npm: obsidian-headless). Use when users want to sync Obsidian vaults from the command line, automate vault syncing in CI/CD pipelines, publish Obsidian notes from a server, set up continuous sync on headless Linux/macOS/Windows machines, configure sync modes (bidirectional/pull-only/mirror-remote), manage remote vault creation and setup, troubleshoot ob sync errors, or script vault operations without the desktop app. Triggers on: "sync my vault headlessly", "ob sync setup", "obsidian headless server", "automate obsidian sync", "publish obsidian from CLI", "obsidian on NAS", "sync vault without desktop app", "headless vault sync", "ob login help", "obsidian CI pipeline".
+description: Use ob (obsidian-headless) for CLI vault sync, publish, and headless automation. Trigger on headless sync, ob commands, CI pipelines, or server-side vault operations.
 ---
 
 # Obsidian Headless (`ob`) Skill

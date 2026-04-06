@@ -1,6 +1,6 @@
 ---
 name: video-full-process
-description: Unified workflow combining video-clean and video-add-chapters with transcript reuse and chapter remapping
+description: Unified workflow combining video-clean and video-add-chapters with transcript reuse and chapter remapping. Use when processing raw video recordings end-to-end into polished, chaptered videos.
 allowed-tools: [Read, Write, Bash, Glob]
 license: MIT
 ---

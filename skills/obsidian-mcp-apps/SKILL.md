@@ -1,6 +1,6 @@
 ---
 name: obsidian-mcp-apps
-description: Build or review Obsidian plugins that host MCP Apps (formerly called MCP UI / mcp-ui), render interactive `ui://` app resources inside custom views or modals, and handle MCP elicitation with native Obsidian dialogs. Use whenever the user mentions MCP Apps, MCP UI, mcp-ui, elicitation, interactive MCP interfaces, embedded tool UIs, human-in-the-loop tool approvals, `pi-excalidraw`, or wants to host tools like Excalidraw inside Obsidian rather than a separate browser tab.
+description: Build Obsidian plugins that host MCP Apps, render interactive ui:// resources, and handle elicitation dialogs. Trigger on MCP Apps, MCP UI, mcp-ui, or embedded tool UIs in Obsidian.
 ---
 
 # Obsidian MCP Apps Skill

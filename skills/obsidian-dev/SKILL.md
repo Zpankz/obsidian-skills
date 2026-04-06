@@ -1,6 +1,6 @@
 ---
 name: obsidian-dev
-description: "Use this skill for Obsidian plugin or theme implementation work: adding features, refactoring code, debugging runtime behavior, structuring commands and settings, and following Obsidian-specific TypeScript, API, CSS, and lifecycle patterns. Reach for it whenever the user is editing plugin/theme source files or asks how to build or fix an Obsidian feature in code."
+description: "Implement Obsidian plugin or theme features: add functionality, refactor code, debug runtime behavior, and follow Obsidian TypeScript and API patterns."
 ---
 
 # Obsidian Development Skill

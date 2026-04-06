@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-react-components
-description: Use this skill when designing or refactoring React component architecture inside an Obsidian plugin, especially if the user mentions compound components, context providers, too many boolean props, render-prop cleanup, reusable component APIs, or wants a settings/dashboard/modal UI to scale cleanly as features grow.
+description: Design or refactor React component architecture in Obsidian plugins. Trigger on compound components, context providers, prop drilling, or scaling plugin UI structure.
 ---
 
 # Obsidian Plugin React Components

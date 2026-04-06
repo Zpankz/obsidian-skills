@@ -1,6 +1,6 @@
 ---
 name: smart-connections-ava-and-migration-harness
-description: Use this skill to add or update Smart Connections Ava regression tests for `src/utils/*.test.js` and `migrations/*.test.js`. Reach for it when the user says 'write test', 'fix migrate_hidden_connections', or 'adjust build_connections_codeblock'. Do NOT use it for integration-level feature demos or UI walkthroughs.
+description: Add or update Smart Connections AVA regression tests for utilities and migrations. Trigger on "write test", "fix migration", or test changes under src/utils or migrations.
 paths:
   - src/utils/**/*.test.js
   - src/utils/**/*.js

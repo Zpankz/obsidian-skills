@@ -1,6 +1,6 @@
 ---
 name: gobi-onboarding
-description: 고비 데스크탑 3.0 대화형 음성 온보딩 가이드
+description: Interactive voice onboarding guide for Gobi Desktop 3.0 (고비 데스크탑). Use when setting up or onboarding to Gobi Desktop.
 metadata:
   version: 2.1.0
   author: lifidea

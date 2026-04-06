@@ -1,6 +1,6 @@
 ---
 name: smart-connections-component-patterns
-description: Use this skill to build or edit Smart Connections components in `src/components/**` with the project’s `build_html` → `render` → `post_process` lifecycle, menu actions, and state-aware UI helpers. Reach for it when the user says "add component", "edit connections-list-item", or changes files under `src/components/`. Do NOT use it for migrations, release scripts, or non-component view/settings work.
+description: Build or edit Smart Connections UI components following the build_html, render, post_process lifecycle. Trigger on "add component", "edit connections-list-item", or src/components changes.
 paths:
   - src/components/**
   - src/components/**/*.js

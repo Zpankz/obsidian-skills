@@ -1,6 +1,6 @@
 ---
 name: interactive-writing-assistant
-description: This skill provides comprehensive support for the writing process from ideation through revision. Use this skill when helping users write essays, articles, or creative pieces through interactive collaboration. The skill supports co-evolving outline and prose, voice-based input processing, multiple writing styles, and connection to the user's PKM system for enriched content.
+description: Guide interactive writing from ideation through revision with co-evolving outline and prose. Trigger on essay, article, or creative writing collaboration requests.
 allowed-tools:
   - Read
   - Write

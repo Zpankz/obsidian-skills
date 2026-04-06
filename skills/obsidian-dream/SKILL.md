@@ -1,12 +1,6 @@
 ---
 name: obsidian-dream
-description: |
-  PKM memory consolidation skill for Obsidian workflows. Scans Claude Code session
-  transcripts for corrections, decisions, preferences, vault patterns, knowledge graph
-  insights, and research directions, then merges findings into persistent memory files.
-  Consistent with /paths consolidate for learning-path session history.
-  Auto-triggers via Stop hook every 24hrs. Use /obsidian-dream to run manually,
-  /obsidian-dream status to check last run, /obsidian-dream dry-run for preview.
+description: Consolidate corrections, decisions, and vault patterns from Claude Code sessions into persistent memory files. Use /obsidian-dream to run manually or auto-triggers every 24hrs via Stop hook.
 tags: [memory, maintenance, consolidation, pkm, obsidian, autonomous, hook]
 ---
 

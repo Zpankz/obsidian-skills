@@ -1,6 +1,6 @@
 ---
 name: youtube-transcript-summarizer
-description: Extract YouTube video transcripts and generate AI-powered summaries in any language. Converts videos to structured markdown documents with summaries, key points, and timelines.
+description: Extract YouTube video transcripts and generate AI-powered summaries in any language. Use when you need a structured markdown summary, key points, or timeline from a YouTube video.
 allowed-tools:
   - Read
   - Write

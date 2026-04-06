@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-react-best-practices
-description: Use this skill when an Obsidian plugin frontend uses React and you want stronger rendering, state, bundle, and async performance patterns. Trigger when the user mentions rerenders, React lag, `useMemo`, `useEffect`, bundle size, slow dashboards, sluggish settings panes, dynamic imports, or React/Next.js best practices in a plugin UI. Adapts Vercel's React and Next.js best-practice guidance for plugin settings panes, custom views, dashboards, and other React-driven plugin UI.
+description: Apply React best practices to Obsidian plugin UIs for rendering, state, and bundle performance. Trigger on rerenders, useMemo, useEffect, bundle size, or slow plugin views.
 ---
 
 # Obsidian Plugin React Best Practices

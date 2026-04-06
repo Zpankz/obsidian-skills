@@ -1,6 +1,6 @@
 ---
 name: ai4pkm-helper
-description: Configure AI4PKM orchestrator, agents, multi-worker AI comparisons, pollers, and automation. Triggers on: orchestrator setup, yaml config, agent creation, multi-worker comparison, AI model testing, claude vs gemini, poller sync, limitless integration, apple photos/notes, cron scheduling, workflow automation, task management, korean PKM, "에이전트 추가", "워커 설정", "limitless 연동", "스케줄 설정", file triggers, scheduled tasks, automation workflows, CLI commands, troubleshooting AI4PKM issues, or Korean language AI operations.
+description: Configure AI4PKM orchestrator for automated PKM workflows, multi-agent setups, AI model comparisons, and poller integrations. Trigger on orchestrator config, agent creation, or workflow automation.
 ---
 
 # AI4PKM Helper

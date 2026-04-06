@@ -1,6 +1,6 @@
 ---
 name: smart-connections-view-command-flow
-description: Use this skill to implement Smart Connections view and command wiring in `src/main.js` and `src/views/**` with lifecycle-safe registration, cleanup, and leaf-location persistence. Reach for it when the user says "new view", "settings tab", "command", or "help modal". Do NOT use it for pure utility logic or stylesheet-only changes.
+description: Wire Smart Connections views, commands, and settings tabs with lifecycle-safe registration and leaf persistence. Trigger on "new view", "command", or "settings tab".
 paths:
   - src/main.js
   - src/views/**/*.js

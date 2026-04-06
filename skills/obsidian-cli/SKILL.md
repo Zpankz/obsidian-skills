@@ -1,6 +1,6 @@
 ---
 name: obsidian-cli
-description: "Use this skill for operating a running Obsidian app through the `obsidian` CLI: read/create/search notes, update properties and tasks, target specific vaults, reload plugins, inspect the DOM, capture errors or screenshots, and run app-context JavaScript. Trigger whenever the user wants live Obsidian operations from the terminal instead of direct file edits. Do not use if Obsidian is not open or the task is just ordinary Markdown editing."
+description: "Operate a running Obsidian app through the obsidian CLI: read/create/search notes, reload plugins, inspect DOM, and run app-context JavaScript. Trigger on live vault operations from the terminal."
 ---
 
 # Obsidian CLI

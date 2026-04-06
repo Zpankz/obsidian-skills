@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-shadcn-ui
-description: Use this skill when an Obsidian plugin UI is built with React, Tailwind, and shadcn/ui components, or when the user explicitly wants to introduce that stack for richer plugin settings pages, dialogs, sheets, sidebars, dashboards, onboarding flows, or custom views. Trigger when the user mentions shadcn/ui, `components.json`, `shadcn init`, adding components like button/card/dialog, or making a React-based plugin UI substantially more polished. Covers shadcn CLI workflows, component selection, composition rules, styling rules, theming, and safe update workflows.
+description: Use when building Obsidian plugin UI with React, Tailwind, and shadcn/ui. Trigger on shadcn init, components.json, or adding shadcn components to plugin views.
 ---
 
 # Obsidian Plugin shadcn/ui

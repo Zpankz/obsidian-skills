@@ -1,6 +1,6 @@
 ---
 name: obsidian-markdown
-description: "Use this skill for creating, fixing, or validating Obsidian note content in `.md` files: wikilinks, embeds, callouts, properties/frontmatter, tags, comments, footnotes, math, and vault-friendly note structure. Trigger whenever the user is writing or repairing Obsidian notes—even if they just say 'fix this note' or mention links, callouts, frontmatter, or note formatting. Do not use for `.base`/`.canvas` files, plugin/theme code, or live CLI automation."
+description: "Create, fix, or validate Obsidian note content: wikilinks, embeds, callouts, frontmatter, tags, and vault-friendly structure. Trigger on writing or repairing Obsidian notes."
 ---
 
 # Obsidian Flavored Markdown

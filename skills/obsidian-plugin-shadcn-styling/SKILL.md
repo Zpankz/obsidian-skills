@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-shadcn-styling
-description: Use this skill when styling a React-based Obsidian plugin UI that already uses shadcn/ui, especially if the user says the interface should look better, cleaner, more consistent, more themeable, or more polished without rewriting the whole component tree. Covers semantic tokens, variants, icon handling, theming, CSS variables, spacing rules, and safe customization without fighting generated component styles.
+description: Style and theme an Obsidian plugin that already uses shadcn/ui. Trigger when the user wants a cleaner, more consistent, or more polished shadcn-based plugin UI.
 ---
 
 # Obsidian Plugin shadcn Styling

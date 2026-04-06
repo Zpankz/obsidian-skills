@@ -1,6 +1,6 @@
 ---
 name: obsidian-plugin-react-performance
-description: Use this skill when optimizing a React-based Obsidian plugin UI for responsiveness, smaller bundles, fewer unnecessary renders, lighter event handling, or better async behavior. Trigger when the user says a plugin view is laggy, a search panel is janky, a settings screen rerenders too much, a heavy component should lazy-load, or they want the most client-relevant subset of React performance guidance. Focuses on the Vercel guidance that is most relevant to client-heavy plugin interfaces.
+description: Optimize React-based Obsidian plugin UI for responsiveness, bundle size, and render efficiency. Trigger on laggy views, excessive rerenders, or lazy-loading needs.
 ---
 
 # Obsidian Plugin React Performance

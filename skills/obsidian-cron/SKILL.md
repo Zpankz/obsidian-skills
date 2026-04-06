@@ -1,6 +1,6 @@
 ---
 name: obsidian-cron
-description: "Use this skill for scheduled or event-driven Obsidian automation: cron jobs, macOS launchd agents, Linux crontab entries, recurring morning routines, periodic vault maintenance, Shell Commands timers, obsidian-cron jobs, and startup scripts via CodeScript Toolkit, JS Engine, or Templater. Reach for it whenever the user wants Obsidian to run something automatically on a schedule, at startup, after file events, every N seconds, or through external shell scripts plus the Obsidian CLI."
+description: "Set up scheduled or event-driven Obsidian automation: cron jobs, launchd agents, periodic vault maintenance, and startup scripts. Trigger when the user wants Obsidian to run something automatically."
 compatibility: "Best results when the Obsidian CLI is installed and Obsidian is running. This skill often pairs with bash, file editing, and community plugins such as Shell Commands, obsidian-cron, CodeScript Toolkit, JS Engine, or Templater."
 ---
 

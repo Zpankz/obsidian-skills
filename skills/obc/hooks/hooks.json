@@ -1,4 +1,5 @@
 {
+  "_TODO": "This SessionStart hook is defined here but is NOT registered at the plugin level (no plugin.json references it). It needs plugin-level registration to actually fire on session start.",
   "hooks": {
     "SessionStart": [
       {

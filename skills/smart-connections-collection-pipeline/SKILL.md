@@ -1,6 +1,6 @@
 ---
 name: smart-connections-collection-pipeline
-description: Use this skill to create or update Smart Connections collection, item, and action pipelines in `src/collections/**`, `src/items/**`, and `src/actions/**` with sane defaults, scoring/filtering changes, and post-processing hooks. Reach for it when the request says "update scoring", "new action", or "collection settings" and the change must preserve pinned/hidden behavior and frontmatter filters. Do NOT use it for component styling or UI-only rendering changes.
+description: Create or update Smart Connections collection, item, and action pipelines with scoring, filtering, and post-processing hooks. Trigger on "update scoring", "new action", or "collection settings".
 paths:
   - src/collections/**
   - src/items/**

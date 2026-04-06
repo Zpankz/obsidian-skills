@@ -1,6 +1,6 @@
 ---
 name: obsidian-bases
-description: "Use this skill for creating, repairing, or explaining Obsidian Bases `.base` files: live table, card, list, or map views over notes with filters, formulas, grouping, and summaries. Trigger whenever the user wants a database-like Obsidian view, asks for a Base/Bases file, or needs formulas and filters over note metadata. Do not use for plain Markdown tables or Dataview unless the request is specifically about Bases."
+description: "Create, repair, or explain Obsidian Bases .base files: live table, card, list, or map views with filters, formulas, and grouping. Trigger on database-like views or .base files."
 ---
 
 # Obsidian Bases
