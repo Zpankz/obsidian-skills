@@ -1,6 +1,6 @@
 {
   "name": "obsidian-skills",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A marketplace of agent skills for Obsidian workflows, organized into granular bundles including notes, plugins, automation, development, plugin devkit, plugin UI, visuals, media, and imported plugin-specific families.",
   "author": {
     "name": "Steph Ango",
