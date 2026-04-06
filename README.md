@@ -4,7 +4,7 @@ These skills follow the [Agent Skills specification](https://agentskills.io/spec
 
 ## Available Skills
 
-This repo currently contains **98 skills**, audited into **14 granular marketplace bundles** (plus one convenience meta-bundle) so users can install just the parts they need.
+This repo currently contains **98 skills**, organized into **14 granular marketplace bundles** so users can install just the parts they need.
 
 ### Marketplace bundles
 
@@ -24,7 +24,6 @@ This repo currently contains **98 skills**, audited into **14 granular marketpla
 | `obsidian-skills-smart-connections` | Smart Connections plugin development toolkit | `smart-connections` plus 4 specialized `smart-connections-*` skills |
 | `obsidian-skills-breadcrumbs` | Breadcrumbs plugin documentation toolkit | `breadcrumbs` plus 6 specialized `breadcrumbs-*` skills |
 | `obsidian-skills-notemdpro` | Imported NoteMD Pro family with umbrella routing plus independent subskills | `notemdpro` plus 13 independent `notemdpro-*` subskills |
-| `obsidian-skills-all` | Convenience bundle with every skill in the repo | all 98 skills |
 
 ### Cross-bundle integration opportunities
 
@@ -318,10 +317,6 @@ The imported NoteMD Pro skills are vendored from [Zpankz/notemdpro](https://gith
 
 **Related bundles:** `obsidian-skills-notes`, `obsidian-skills-visual`, `obsidian-skills-media`, `obsidian-skills-workflows`
 
-#### `obsidian-skills-all`
-
-This bundle contains **every skill listed above** and is the recommended install if you want the old monolithic bundle experience.
-
 ## Installation
 
 ### Claude Code Plugin Marketplace
@@ -347,9 +342,8 @@ Other available bundles:
 - `obsidian-skills-smart-connections`
 - `obsidian-skills-breadcrumbs`
 - `obsidian-skills-notemdpro`
-- `obsidian-skills-all`
 
-Install `obsidian-skills-all` if you want the old “everything in one install” experience.
+Install all 14 bundles to get the complete set.
 
 ### Migration from legacy bundles
 
@@ -357,12 +351,11 @@ The old two-bundle layout has been replaced by more granular distributions.
 
 | Old bundle | Recommended replacement |
 |---|---|
-| `obsidian-skills-core` | `obsidian-skills-all` for a drop-in “install everything” experience, or install `obsidian-skills-notes` + `obsidian-skills-plugins` + `obsidian-skills-automation` + `obsidian-skills-workflows` + `obsidian-skills-dev` + `obsidian-skills-gemini` + `obsidian-skills-plugin-devkit` + `obsidian-skills-plugin-ui` + `obsidian-skills-visual` to stay closer to the previous core footprint |
+| `obsidian-skills-core` | Install `obsidian-skills-notes` + `obsidian-skills-plugins` + `obsidian-skills-automation` + `obsidian-skills-workflows` + `obsidian-skills-dev` + `obsidian-skills-gemini` + `obsidian-skills-plugin-devkit` + `obsidian-skills-plugin-ui` + `obsidian-skills-visual` for equivalent coverage |
 | `obsidian-skills-extras` | `obsidian-skills-workflows` + `obsidian-skills-media`, and add `obsidian-skills-visual` if you also want `markdown-slides` |
 
 Notes:
 - `ob` / `obsidian-headless` is now included in `obsidian-skills-automation`
-- `obsidian-skills-all` includes every current skill in the repository
 - `obsidian-skills-plugin-devkit` is the dedicated home for plugin-specific scaffolding, lifecycle, accessibility, and submission guidance
 - `obsidian-skills-plugin-ui` adds React, shadcn/ui, theming, composition, and UI-performance guidance for richer plugin frontends
 

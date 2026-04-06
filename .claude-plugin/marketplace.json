@@ -218,12 +218,6 @@
         "./skills/notemdpro-text-translator",
         "./skills/notemdpro-web-researcher"
       ]
-    },
-    {
-      "name": "obsidian-skills-all",
-      "description": "Every skill in this marketplace. Install this if you want the complete set without choosing individual bundles.",
-      "source": "./",
-      "strict": false
     }
   ]
 }
